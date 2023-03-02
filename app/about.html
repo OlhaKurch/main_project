@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-BoldItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header header--white container">
+        <div class="header__top header__top--grey">
+            <ul class="header__leng">
+                <li class="header__leng-item header__leng-item--grey"><a href="#">УК</a></li>
+                <li class="header__leng-item header__leng-item--grey"><a href="#">РУ</a></li>
+                <li class="header__leng-item header__leng-item--grey active"><a href="#" >EN</a></li>
+            </ul>
+            <p class="header__adress">Kyiv, Mechnikova str., 14/1</p>
+            <a href="tel:+30800211927" class="header__tel header__tel--dark">0800 211 927</a>
+            <a href="#" class="header__fb">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="#B3B3BA"/>
+                </svg>
+            </a>
+        </div>
+        <div class="header__logo-wrap header__logo-wrap--dark">
+            <a href="index.html">
+                <svg class="header__logo header__logo--dark" width="70" height="33" viewBox="0 0 70 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.64358 0H0V19.0926H2.64358V12.0094C2.64358 10.8111 2.94164 9.86583 3.53774 9.20012C4.13384 8.53441 4.95024 8.18824 5.96102 8.18824C6.82926 8.18824 7.55495 8.50778 8.13809 9.12024C8.72124 9.74601 9.01929 10.5315 9.01929 11.4769V19.1059H11.6758V11.4769C11.6758 9.71938 11.1964 8.3347 10.2374 7.29619C9.27846 6.25768 8.02146 5.73843 6.49233 5.73843C6.05173 5.73843 5.61114 5.79168 5.1835 5.91151C4.7429 6.03134 4.39301 6.16448 4.10792 6.31094C3.82283 6.45739 3.5507 6.61717 3.30448 6.80356C3.05826 6.98996 2.8898 7.12311 2.81205 7.20299C2.7343 7.28288 2.6695 7.33613 2.64358 7.37608V0Z" fill="#F0145A"/>
+                    <path d="M17.5856 0H14.8604V19.0767H17.5856V0Z" fill="white"/>
+                    <path d="M33.6598 13.4896L33.796 12.127C33.796 10.3011 33.1965 8.77493 31.9701 7.54857C30.7438 6.32221 29.2176 5.72266 27.3917 5.72266C25.5658 5.72266 23.9851 6.37672 22.677 7.68483C21.3689 8.99295 20.7148 10.5463 20.7148 12.3995C20.7148 14.3072 21.3962 15.9423 22.7315 17.305C24.0669 18.6676 25.6748 19.3489 27.528 19.3489C28.2365 19.3489 28.8906 19.2399 29.5446 19.0491C30.1987 18.8311 30.7438 18.6131 31.1253 18.3951C31.5341 18.1498 31.9429 17.8773 32.2971 17.5775C32.6514 17.2777 32.8967 17.0597 33.0057 16.9234C33.1147 16.7872 33.1965 16.7054 33.251 16.6236L31.4796 14.8522L31.0708 15.37C30.7983 15.6971 30.335 16.0241 29.6809 16.3784C28.9996 16.7327 28.291 16.8962 27.528 16.8962C26.4651 16.8962 25.5658 16.5691 24.8027 15.8878C24.0396 15.2065 23.5764 14.4162 23.4401 13.4896H33.6598ZM27.3917 8.03912C28.4 8.03912 29.2176 8.33889 29.8989 8.9112C30.553 9.51075 30.9618 10.2466 31.1253 11.1732H23.5491C23.7944 10.2466 24.2304 9.51075 24.9117 8.9112C25.5658 8.33889 26.4106 8.03912 27.3917 8.03912Z" fill="white"/>
+                    <path d="M46.3695 18.286C46.3695 19.4852 46.0153 20.4662 45.2794 21.2293C44.5709 21.9651 43.6715 22.3467 42.5542 22.3467C42.0637 22.3467 41.5731 22.2649 41.1098 22.1286C40.6465 21.9924 40.2922 21.8289 39.9925 21.6381C39.6927 21.4473 39.4202 21.2566 39.1476 21.0113C38.9024 20.766 38.7389 20.6025 38.6571 20.5207C38.5753 20.439 38.5208 20.3572 38.4663 20.3027L36.6949 22.0741L36.9129 22.3467C37.0492 22.5374 37.2945 22.7827 37.6215 23.0552C37.9485 23.3005 38.3301 23.573 38.7661 23.8455C39.2021 24.0908 39.7472 24.3088 40.4285 24.4996C41.1098 24.6904 41.8184 24.7994 42.5542 24.7994C44.4074 24.7994 45.9335 24.1726 47.2144 22.919C48.468 21.6381 49.0948 20.112 49.0948 18.2588V5.99518H46.3695V7.3578L45.9063 6.94902C45.6065 6.67649 45.1432 6.40397 44.4891 6.13144C43.8351 5.85892 43.1265 5.72266 42.4179 5.72266C40.7555 5.72266 39.3384 6.34946 38.112 7.63033C36.8857 8.9112 36.2861 10.4373 36.2861 12.2632C36.2861 14.0892 36.8857 15.6153 38.112 16.8962C39.3384 18.177 40.7555 18.8038 42.4179 18.8038C42.8812 18.8038 43.3173 18.7493 43.7806 18.6403C44.2166 18.5041 44.5709 18.3678 44.8707 18.2315C45.1704 18.0953 45.443 17.9318 45.6882 17.741C45.9335 17.5502 46.1243 17.414 46.1788 17.3595L46.3695 17.1687V18.286ZM39.0114 12.2632C39.0114 11.1186 39.3657 10.1648 40.1015 9.37449C40.8373 8.58417 41.7094 8.17538 42.6905 8.17538C43.6715 8.17538 44.5436 8.58417 45.2794 9.37449C45.988 10.1648 46.3695 11.1186 46.3695 12.2632C46.3695 13.4079 45.988 14.3617 45.2794 15.152C44.5436 15.9423 43.6715 16.3511 42.6905 16.3511C41.7094 16.3511 40.8373 15.9423 40.1015 15.152C39.3657 14.3617 39.0114 13.4079 39.0114 12.2632Z" fill="white"/>
+                    <path d="M63.3195 19.0764V10.6281C63.3195 9.23823 62.8017 8.06637 61.7934 7.13979C60.7851 6.18595 59.4769 5.72266 57.869 5.72266C57.2422 5.72266 56.6154 5.80441 56.0159 5.96793C55.4163 6.1587 54.9258 6.34946 54.5715 6.56748C54.2172 6.7855 53.8629 7.03078 53.5359 7.33055C53.2089 7.60308 53.0181 7.79384 52.9091 7.90285C52.8273 8.01186 52.7456 8.09362 52.6911 8.17538L54.4625 9.94679L54.8168 9.4835C55.0348 9.18372 55.4163 8.9112 55.9886 8.61142C56.5609 8.31164 57.1877 8.17538 57.869 8.17538C58.6594 8.17538 59.3134 8.42065 59.8312 8.88394C60.349 9.34724 60.5943 9.94679 60.5943 10.6281L55.8251 11.4457C54.6533 11.6364 53.6994 12.0997 53.0454 12.8356C52.364 13.5714 52.0098 14.4707 52.0098 15.5335C52.0098 16.5419 52.4458 17.414 53.3179 18.177C54.2172 18.9674 55.3073 19.3489 56.6427 19.3489C57.106 19.3489 57.542 19.2944 57.9781 19.1581C58.4413 19.0491 58.7956 18.9129 59.0954 18.7766C59.3952 18.6403 59.6677 18.4768 59.913 18.286C60.1583 18.0953 60.3218 17.959 60.4308 17.9045C60.5125 17.8228 60.567 17.741 60.5943 17.7137V19.0764H63.3195ZM57.0515 16.8962C56.3429 16.8962 55.7706 16.7327 55.3618 16.4056C54.9258 16.0786 54.735 15.6971 54.735 15.261C54.735 14.7977 54.8713 14.3889 55.1711 14.0892C55.4708 13.7894 55.8796 13.5714 56.3702 13.4896L60.5943 12.8083V13.0808C60.5943 14.3072 60.2945 15.2338 59.6677 15.9151C59.0409 16.5691 58.1688 16.8962 57.0515 16.8962Z" fill="white"/>
+                    <path d="M69.3337 0H66.6084V19.0767H69.3337V0Z" fill="white"/>
+                    <path d="M0 28.3308H0.852878V31.3211H2.70078V32.016H0V28.3308Z" fill="white"/>
+                    <path d="M8.26752 31.2263H6.5565L6.23009 32.016H5.35615L6.99873 28.3308H7.84108L9.48893 32.016H8.59393L8.26752 31.2263ZM7.99902 30.5788L7.41464 29.1678L6.83026 30.5788H7.99902Z" fill="white"/>
+                    <path d="M17.8731 28.3308L16.6675 32.016H15.7515L14.9407 29.5206L14.1036 32.016H13.1928L11.982 28.3308H12.8664L13.6982 30.921L14.5669 28.3308H15.3566L16.199 30.942L17.0571 28.3308H17.8731Z" fill="white"/>
+                    <path d="M26.9457 32.0792C26.5702 32.0792 26.2297 31.9985 25.9244 31.837C25.6225 31.6721 25.3838 31.4457 25.2084 31.1579C25.0364 30.8666 24.9504 30.5384 24.9504 30.1734C24.9504 29.8084 25.0364 29.482 25.2084 29.1942C25.3838 28.9028 25.6225 28.6765 25.9244 28.515C26.2297 28.3501 26.5719 28.2676 26.951 28.2676C27.2704 28.2676 27.5582 28.3237 27.8144 28.436C28.0741 28.5484 28.2917 28.7098 28.4672 28.9204L27.9197 29.4258C27.6705 29.138 27.3616 28.9941 26.9931 28.9941C26.7649 28.9941 26.5614 29.045 26.3824 29.1468C26.2034 29.2451 26.063 29.3837 25.9612 29.5627C25.8629 29.7417 25.8138 29.9453 25.8138 30.1734C25.8138 30.4015 25.8629 30.6051 25.9612 30.7841C26.063 30.9631 26.2034 31.1035 26.3824 31.2053C26.5614 31.3035 26.7649 31.3527 26.9931 31.3527C27.3616 31.3527 27.6705 31.207 27.9197 30.9157L28.4672 31.4211C28.2917 31.6352 28.0741 31.7984 27.8144 31.9107C27.5547 32.0231 27.2651 32.0792 26.9457 32.0792Z" fill="white"/>
+                    <path d="M33.3831 32.0792C33.0005 32.0792 32.6548 31.9967 32.3459 31.8318C32.0406 31.6668 31.8002 31.4404 31.6247 31.1526C31.4527 30.8613 31.3667 30.5349 31.3667 30.1734C31.3667 29.8119 31.4527 29.4872 31.6247 29.1994C31.8002 28.9081 32.0406 28.68 32.3459 28.515C32.6548 28.3501 33.0005 28.2676 33.3831 28.2676C33.7657 28.2676 34.1096 28.3501 34.415 28.515C34.7203 28.68 34.9607 28.9081 35.1362 29.1994C35.3117 29.4872 35.3995 29.8119 35.3995 30.1734C35.3995 30.5349 35.3117 30.8613 35.1362 31.1526C34.9607 31.4404 34.7203 31.6668 34.415 31.8318C34.1096 31.9967 33.7657 32.0792 33.3831 32.0792ZM33.3831 31.3527C33.6007 31.3527 33.7972 31.3035 33.9727 31.2053C34.1482 31.1035 34.2851 30.9631 34.3834 30.7841C34.4852 30.6051 34.5361 30.4015 34.5361 30.1734C34.5361 29.9453 34.4852 29.7417 34.3834 29.5627C34.2851 29.3837 34.1482 29.2451 33.9727 29.1468C33.7972 29.045 33.6007 28.9941 33.3831 28.9941C33.1655 28.9941 32.9689 29.045 32.7934 29.1468C32.618 29.2451 32.4793 29.3837 32.3775 29.5627C32.2793 29.7417 32.2301 29.9453 32.2301 30.1734C32.2301 30.4015 32.2793 30.6051 32.3775 30.7841C32.4793 30.9631 32.618 31.1035 32.7934 31.2053C32.9689 31.3035 33.1655 31.3527 33.3831 31.3527Z" fill="white"/>
+                    <path d="M42.0264 32.016L42.0211 29.8049L40.9366 31.6264H40.5523L39.473 29.8522V32.016H38.6728V28.3308H39.3782L40.7576 30.6209L42.1159 28.3308H42.8161L42.8266 32.016H42.0264Z" fill="white"/>
+                    <path d="M47.9285 28.3308C48.2549 28.3308 48.5374 28.3852 48.7761 28.494C49.0183 28.6028 49.2043 28.7572 49.3342 28.9573C49.464 29.1573 49.529 29.3942 49.529 29.668C49.529 29.9382 49.464 30.1751 49.3342 30.3787C49.2043 30.5788 49.0183 30.7332 48.7761 30.842C48.5374 30.9473 48.2549 30.9999 47.9285 30.9999H47.1862V32.016H46.3333V28.3308H47.9285ZM47.8811 30.305C48.1373 30.305 48.3321 30.2506 48.4655 30.1418C48.5989 30.0295 48.6656 29.8716 48.6656 29.668C48.6656 29.4609 48.5989 29.303 48.4655 29.1942C48.3321 29.0818 48.1373 29.0257 47.8811 29.0257H47.1862V30.305H47.8811Z" fill="white"/>
+                    <path d="M55.0121 31.2263H53.3011L52.9747 32.016H52.1008L53.7433 28.3308H54.5857L56.2335 32.016H55.3385L55.0121 31.2263ZM54.7436 30.5788L54.1592 29.1678L53.5749 30.5788H54.7436Z" fill="white"/>
+                    <path d="M62.6281 28.3308V32.016H61.9279L60.0906 29.7785V32.016H59.2482V28.3308H59.9537L61.7858 30.5682V28.3308H62.6281Z" fill="white"/>
+                    <path d="M67.9013 30.7104V32.016H67.0485V30.6999L65.6217 28.3308H66.5273L67.5117 29.9681L68.4963 28.3308H69.3333L67.9013 30.7104Z" fill="white"/>
+                </svg>
+            </a>
+            <svg class="header__logo-line" width="12" height="26" viewBox="0 0 12 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.72827 0H11.9505L3.55574 26H0.333496L8.72827 0Z" fill="#F0145A"/>
+            </svg>
+            <p class="header__name">about us</p>
+        </div>
+        <div class="header__menu header__menu--white">
+            <button class="header__menu-link header__menu-link--dark" href="#"></button>
+            <ul class="header__menu-list header__menu-list--white">
+                <li><a href="#" class="header__menu-item header__menu-item--blue active">about us</a></li>
+                <li><a href="#" class="header__menu-item header__menu-item--blue">services</a></li>
+                <li><a href="#" class="header__menu-item header__menu-item--blue">team</a></li>
+                <li><a href="#" class="header__menu-item header__menu-item--blue">publications</a></li>
+                <li><a href="#" class="header__menu-item header__menu-item--blue">contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="about container">
+            <div class="about__info">
+                <h2 class="title-gradient">We turn over the idea of legal services</h2>
+                <p class="about__info-text">
+                    Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve the adoption of a number of decisions that are important for the industry. Many people form the practice of applying the law of the sea in Ukraine.
+                </p>
+                <p class="about__info-text">HLEGAL is a reliable business partner, confirmed by stable cooperation with international law firms, the trust of large Ukrainian and international companies, and the recognition of professional ratings.
+                </p>
+            </div>
+            <div class="about__wrapper">
+                <article class="about__article">
+                    <div class="about__article-num">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.1137 6.3054C26.9447 6.1374 26.7457 6.0529 26.5157 6.0529C26.4012 6.0529 26.1597 6.1469 25.7927 6.3324C25.4252 6.5184 25.0352 6.7254 24.6247 6.9564C24.2132 7.1859 23.7262 7.3939 23.1642 7.5799C22.6027 7.7654 22.0827 7.8594 21.6042 7.8594C21.1622 7.8594 20.7722 7.7754 20.4362 7.6069C19.3217 7.0849 18.3522 6.6954 17.5292 6.4384C16.7062 6.1819 15.8212 6.0529 14.8737 6.0529C13.2377 6.0529 11.3742 6.5849 9.28524 7.6469C8.85424 7.8619 8.54524 8.0284 8.34524 8.1504L8.14674 6.6949C8.59524 6.3054 8.88474 5.7379 8.88474 5.0974C8.88474 3.9239 7.93374 2.9729 6.76024 2.9729C5.58674 2.9729 4.63574 3.9239 4.63574 5.0974C4.63574 5.8629 5.04474 6.5284 5.65174 6.9024L8.52174 27.9474C8.60724 28.5739 9.14324 29.0284 9.75874 29.0284C9.81474 29.0284 9.87174 29.0249 9.92924 29.0174C10.6132 28.9234 11.0922 28.2939 10.9987 27.6099L9.84524 19.1514C11.9382 18.1129 13.7487 17.5894 15.2717 17.5894C15.9182 17.5894 16.5487 17.6859 17.1632 17.8809C17.7782 18.0764 18.2897 18.2884 18.6967 18.5179C19.1037 18.7479 19.5842 18.9609 20.1367 19.1549C20.6902 19.3499 21.2367 19.4474 21.7762 19.4474C23.1392 19.4474 24.7717 18.9339 26.6742 17.9074C26.9132 17.7834 27.0882 17.6614 27.1987 17.5419C27.3092 17.4224 27.3647 17.2524 27.3647 17.0314V6.9029C27.3647 6.6734 27.2812 6.4739 27.1137 6.3054Z" fill="#F0145A"/>
+                        </svg>
+                        <p class="title-gradient title-gradient--fz36">10+</p>
+                    </div>
+                    <h3 class="about__article-title">years of relevant experience</h3>
+                </article>
+                <article class="about__article">
+                    <div class="about__article-num">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.2321 18.332V17.774C17.2321 17.0935 16.6806 16.542 16.0006 16.542C15.3201 16.542 14.7686 17.0935 14.7686 17.774V18.332C14.7686 19.0125 15.3201 19.564 16.0006 19.564C16.6801 19.564 17.2321 19.0125 17.2321 18.332Z" fill="#F0145A"/>
+                            <path d="M18.0769 19.0136C17.8039 19.9071 16.9814 20.5631 16.0004 20.5631C15.0189 20.5631 14.1964 19.9071 13.9234 19.0136H5.43886C4.90336 19.0136 4.39736 18.8891 3.94336 18.6731V24.3066C3.94336 25.4066 4.84336 26.3066 5.94336 26.3066H26.0564C27.1564 26.3066 28.0564 25.4066 28.0564 24.3066V18.6736C27.6019 18.8896 27.0964 19.0141 26.5609 19.0141H18.0769V19.0136Z" fill="#F0145A"/>
+                            <path d="M26.4775 8.8976H21.677C21.387 7.0846 19.8165 5.6936 17.923 5.6936H14.0765C12.183 5.6936 10.613 7.0846 10.3225 8.8976H5.52247C4.37647 8.8976 3.43896 9.7976 3.43896 10.8976V15.5141C3.43896 16.6186 4.33447 17.5141 5.43897 17.5141H13.829C13.8575 16.9386 14.1045 16.4216 14.495 16.0476C14.507 16.0361 14.521 16.0271 14.5335 16.0161C14.62 15.9366 14.71 15.8616 14.8085 15.7966C14.8435 15.7731 14.8835 15.7571 14.92 15.7361C15.001 15.6896 15.081 15.6411 15.1685 15.6051C15.237 15.5766 15.311 15.5601 15.383 15.5386C15.445 15.5201 15.504 15.4956 15.5685 15.4826C15.708 15.4541 15.8525 15.4391 16 15.4391C16.148 15.4391 16.292 15.4546 16.4315 15.4826C16.4955 15.4956 16.5545 15.5201 16.6165 15.5386C16.6885 15.5601 16.7625 15.5766 16.831 15.6056C16.918 15.6416 16.9975 15.6896 17.0785 15.7361C17.1155 15.7576 17.1555 15.7736 17.191 15.7971C17.2895 15.8616 17.379 15.9366 17.4655 16.0161C17.478 16.0276 17.4925 16.0366 17.5045 16.0486C17.8955 16.4226 18.142 16.9396 18.1705 17.5151H26.5605C27.665 17.5151 28.5605 16.6196 28.5605 15.5151V10.8986C28.561 9.7976 27.6235 8.8976 26.4775 8.8976ZM12.248 8.8976C12.503 8.1271 13.2215 7.5656 14.0765 7.5656H17.923C18.778 7.5656 19.4965 8.1271 19.7515 8.8976H12.248Z" fill="#F0145A"/>
+                        </svg>
+                        <p class="title-gradient title-gradient--fz36">30+</p>
+                    </div>
+                    <h3 class="about__article-title">active clients who entrust us with their orders on a monthly basis</h3>
+                </article>
+                <article class="about__article">
+                    <div class="about__article-num">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.0971 3.55298C9.25258 3.55298 3.68408 9.12148 3.68408 15.966C3.68408 22.811 9.25258 28.38 16.0971 28.38C22.9416 28.38 28.5101 22.811 28.5101 15.966C28.5106 9.12148 22.9421 3.55298 16.0971 3.55298ZM22.9556 15.0585V15.059L19.3621 17.659L20.7461 21.889C20.7681 21.955 20.7796 22.0255 20.7796 22.0975C20.7796 22.467 20.4806 22.767 20.1111 22.767C19.9641 22.767 19.8291 22.72 19.7191 22.6405L16.0976 20.021L12.4761 22.6405C12.3661 22.72 12.2311 22.767 12.0846 22.767C11.7146 22.767 11.4151 22.4675 11.4151 22.0975C11.4151 22.025 11.4271 21.955 11.4491 21.889L12.8336 17.659L9.24008 15.059V15.0585C9.07208 14.9375 8.96308 14.74 8.96308 14.517C8.96308 14.1475 9.26208 13.8485 9.63208 13.8485H14.0806L15.4581 9.63798C15.5421 9.36448 15.7966 9.16548 16.0981 9.16548C16.3991 9.16548 16.6541 9.36448 16.7376 9.63798L18.1151 13.8485H22.5636C22.9331 13.8485 23.2326 14.1475 23.2326 14.517C23.2321 14.74 23.1231 14.9375 22.9556 15.0585Z" fill="#F0145A"/>
+                        </svg>
+                        <p class="title-gradient title-gradient--fz36">500+</p>
+                    </div>
+                    <h3 class="about__article-title">hours of pro bono work annually</h3>
+                </article>
+            </div>
+        </section>
+        <section class="about-team">
+            <div class="about-team__pic">
+                <picture>
+                    <source media="(min-width:1440px)" srcset="img/team_desktop.jpg">
+                    <source media="(min-width:992px)" srcset="img/team_tablet_hd.jpg">
+                    <source media="(min-width:768px)" srcset="img/team_tablet.jpg">
+                    <img src="img/team_mob.jpg" alt="team" class="about-team__foto">
+                </picture>
+                <p class="about-team__discr">team</p>
+            </div>
+            <div class="about-team__info container">
+                <div class="about-team__text">
+                    <p class="about-team__item">The historically unchanged legal profession has begun to reformat in recent years. Clients are feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution in legal services has begun and is imminent.</p>
+                    <p class="about-team__item">Quality is what we care about the most.</p>
+                    <p class="about-team__item">It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And we want our clients to trust us too.</p>
+                </div>
+                <h2 class="about-team__title title-gradient">Quality is what we care about the most.</h2>
+            </div>
+        </section>
+        <section class="achievements">
+            <div class="container">
+                <h2 class="achievements__title">Achievements</h2>
+                <div class="achievements__slider autoplay">
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider1.png"> 
+                            <img class="achievements__slider-img" src="img/slider1mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider2.png"> 
+                            <img class="achievements__slider-img" src="img/slider2mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider3.png"> 
+                            <img class="achievements__slider-img" src="img/slider3mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider4.png"> 
+                            <img class="achievements__slider-img" src="img/slider4mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider1.png"> 
+                            <img class="achievements__slider-img" src="img/slider1mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider2.png"> 
+                            <img class="achievements__slider-img" src="img/slider2mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider3.png"> 
+                            <img class="achievements__slider-img" src="img/slider3mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider4.png"> 
+                            <img class="achievements__slider-img" src="img/slider4mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider1.png"> 
+                            <img class="achievements__slider-img" src="img/slider1mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider2.png"> 
+                            <img class="achievements__slider-img" src="img/slider2mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider3.png"> 
+                            <img class="achievements__slider-img" src="img/slider3mob.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="achievements__slider-item">
+                        <picture>
+                            <source media="(min-width:992px)" srcset="img/slider4.png"> 
+                            <img class="achievements__slider-img" src="img/slider4mob.png" alt="logo">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__adress">
+                <p class="footer__adress-info">Kyiv, Mechnikova str., 14/1</p>
+                <a href="#" class="footer__adress-map">On map</a>
+            </div>
+            <div class="footer__contact">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="#24A3FF"/>
+                </svg>
+                <a href="tel:0800211927" class="footer__contact-tel">0800 211 927</a>
+                <a href="mailto:contact@forstudy.space" class="footer__contact-mail">contact@forstudy.space</a>
+            </div>
+            <div class="footer__info">
+                <a href="#">© 2021 HLEGAL Law company, LLC</a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/all.js"></script>
+</body>
+</html>

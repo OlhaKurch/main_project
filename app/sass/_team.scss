@@ -1,0 +1,93 @@
+.team {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    &__bg {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &__foto {
+        border-radius: 12px 12px 0px 0px;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+    }
+    &__about {
+        background-color:#EDEDF7;
+        padding: 28px 30px;
+        &-name {
+            padding-top: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #B3B3BA;
+        }
+        &-position {
+            padding-top: 6px;
+            font-size: 14px;
+            line-height: 22px;
+            color: #B3B3BA;
+        }
+    }
+    &__slide {
+        padding-top: 30px;
+        text-align: center;
+        &-item {
+            width: 16px;
+            height: 16px;
+            background: #24A3FF;
+            opacity: 0.2;
+            border-radius: 50%;
+            border-color: transparent;
+            margin: 0 6px;
+            cursor: pointer;
+            &.active {
+                opacity: 1;
+            }
+            &:hover:not(.active) {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .team {
+        margin-top: 80px;
+    }
+}
+@media(min-width: 992px) {
+    .team {
+        &__bg {
+            grid-template-columns: 400px 1fr;
+            grid-template-rows: min-content min-content;
+        }
+        &__foto {
+            border-radius: 12px 0px 0px 12px;
+            height: 527px;
+        }
+        &__about {
+            padding: 29px 20px 25px 30px;
+            border-radius: 0 12px 12px 0;
+        }
+        &__slide {
+            grid-column: 1/-1;
+            padding-top: 27px;
+        }
+    }
+}
+@media(min-width: 1200px) {
+    .team {
+        &__foto {
+            height: 100%;
+        }
+        &__about {
+            padding-top: 30px;
+            margin-right: 0;
+            &-name {
+                padding-top: 30px;
+            }
+        }
+    }
+}

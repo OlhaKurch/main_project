@@ -1,0 +1,57 @@
+.main {
+    padding-top: 120px;
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: $color-white;
+        padding-bottom: 160px;
+        padding-left: 30px;
+    }
+    &__scroll {
+        margin: 0 auto;
+        width: 42px;
+        height: 42px;
+        border: 1px solid $color-white;
+        border-radius:50%;
+        // transition-duration: 300ms;
+        &-link {
+            display: block;
+            text-align: center;
+            padding-top: 12px;
+        }
+        &:hover {
+            border-color: $color-pink;
+            & a path{
+                stroke: $color-pink;
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .main {
+        padding-top: 260px;
+        &__title {
+            padding-bottom: 415px;
+            padding-left: 0px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .main {
+        padding-top: 235px;
+        &__title {
+            padding-bottom: 288px;
+        }
+    }
+}
+@media(min-width: 1200px) {
+    .main {
+        padding-top: 250px;
+        &__title {
+            padding-bottom: 305px;
+        }
+    }
+}

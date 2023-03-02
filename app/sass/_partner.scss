@@ -1,0 +1,95 @@
+.partner {
+    padding-top: 28px;
+    text-align: center;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+    }
+    &__wrapper {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &__logo {
+        height: 120px;
+        width: 100%;
+        display: flex;
+        &-img {
+            display: block;
+            margin: auto;
+        }
+        &--blue {
+            background-color: #1C4280;
+        }
+        &--drblue {
+            background-color: #143646;
+        }
+        &--drorange {
+            background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+        }
+        &--violet {
+            background-color: #9E4DC3;
+        }
+        &--orange {
+            background-color: #FD9339;
+        }
+        &--grey {
+            background-color: #E2E2E4;
+        }
+        &--red {
+            background-color: #C71C36;
+        }
+        &--mint {
+            background-color: #DCF3F9;
+        }
+        &--beige {
+            background-color: #EAEAEA;
+        }
+        &--drviolet {
+            background-color: #282240;
+        }
+        &--greyblue {
+            background-color: #1D4568;
+        }
+        &--black {
+            background-color: #000000;
+        }
+        &--close {
+            display: none;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .partner {
+        padding-top: 31px;
+        &__wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 28px;
+        }
+        &__logo {
+            &--close {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .partner {
+        &__wrapper {
+            margin-top: 30px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .partner {
+        padding-top: 30px;
+    }
+}
