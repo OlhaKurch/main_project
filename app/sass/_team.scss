@@ -1,7 +1,7 @@
 .team {
     margin-top: 50px;
     padding-bottom: 30px;
-    &__bg {
+    &__grid {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -30,26 +30,6 @@
             color: $color-grey;
         }
     }
-    &__slide {
-        padding-top: 30px;
-        text-align: center;
-        &-item {
-            width: 16px;
-            height: 16px;
-            background: $color-blue;
-            opacity: 0.2;
-            border-radius: 50%;
-            border-color: transparent;
-            margin: 0 6px;
-            cursor: pointer;
-            &.active {
-                opacity: 1;
-            }
-            &:hover:not(.active) {
-                opacity: 1;
-            }
-        }
-    }
 }
 
 @media(min-width: 768px) {
@@ -59,7 +39,7 @@
 }
 @media(min-width: 992px) {
     .team {
-        &__bg {
+        &__grid {
             grid-template-columns: 400px 1fr;
             grid-template-rows: min-content min-content;
         }
@@ -70,10 +50,6 @@
         &__about {
             padding: 29px 20px 25px 30px;
             border-radius: 0 12px 12px 0;
-        }
-        &__slide {
-            grid-column: 1/-1;
-            padding-top: 27px;
         }
     }
 }
