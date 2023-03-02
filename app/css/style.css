@@ -317,9 +317,6 @@ ul {
 .header__leng-item--grey.active a {
   color: #FFFFFF;
 }
-.header__leng-item--grey:hover {
-  background-color: #F0145A;
-}
 .header__leng-item--grey:hover a {
   color: #FFFFFF;
 }
@@ -558,6 +555,9 @@ ul {
   }
   .header__leng-item:hover:not(.active) {
     background-color: rgba(255, 255, 255, 0.2);
+  }
+  .header__leng-item--grey:hover:not(.active) {
+    background-color: #F0145A;
   }
 }
 @media (min-width: 992px) {
@@ -1196,6 +1196,8 @@ ul {
   width: 38px;
   height: 38px;
   margin-bottom: 10px;
+}
+.footer__contact svg path {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
@@ -1225,8 +1227,10 @@ ul {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #B3B3BA;
   padding-top: 30px;
+}
+.footer__info a {
+  color: #B3B3BA;
 }
 
 @media (min-width: 768px) {

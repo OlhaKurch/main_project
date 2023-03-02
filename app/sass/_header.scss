@@ -38,13 +38,10 @@
                 & a {
                     color: $color-grey;
                 }
-                &.active a{
+                &.active a {
                     color: $color-white;
                 }
-                &:hover{
-                    background-color: $color-pink;
-                }
-                &:hover a{
+                &:hover a {
                     color: $color-white;
                 }
             }
@@ -279,6 +276,11 @@
             transition-duration: 0.3s;
             &:hover:not(.active) {
                 background-color: rgba(255, 255, 255, 0.2);
+            }
+            &--grey {
+                &:hover:not(.active) {
+                    background-color: $color-pink;
+                }
             }
         }
     }
