@@ -29,29 +29,30 @@
             padding: 3px 8px;
             border-radius: 8px;
             text-align: center;
+            transition-duration: 0.3s;
             & a {
                 color: $color-white;
             }
             &--grey {
+                transition-duration: 0.3s;
                 & a {
                     color: $color-grey;
                 }
                 &.active a{
                     color: $color-white;
                 }
+                &:hover{
+                    background-color: $color-pink;
+                }
                 &:hover a{
                     color: $color-white;
                 }
-                // &:hover{
-                //     background-color: $color-pink;
-                // }
             }
             &.active {
                 background-color: $color-pink;
             }
             &:hover {
                 background-color: $color-pink;
-                // color: $color-white;
             }
         }
     }
@@ -60,6 +61,7 @@
         font-size: 16px;
         line-height: 20px;
         color: $color-white;
+        transition-duration: 0.3s;
         &--dark {
             color: $color-grey;
         }
@@ -265,11 +267,19 @@
                 }
             }
         }
-        &__fb:hover path {
-            fill: $color-pink;
+        &__fb {
+            & path {
+                transition-duration: 0.3s;
+            }
+            &:hover path {
+                fill: $color-pink;
+            }
         }
-        &__leng-item:hover:not(.active) {
-            background-color: rgba(255, 255, 255, 0.2);
+        &__leng-item {
+            transition-duration: 0.3s;
+            &:hover:not(.active) {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
         }
     }
 }

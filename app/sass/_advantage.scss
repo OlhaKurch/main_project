@@ -16,25 +16,26 @@
             font-weight: 700;
             font-size: 30px;
             line-height: 37px;
-            color: #B3B3BA;
+            color: $color-grey;
             white-space: nowrap;
             border: none;
             background-color: transparent;
             cursor: pointer;
             border-bottom: 2px solid transparent;
             padding: 0;
+            transition-duration: 0.5s;
             &.active {
                 background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
             &:hover:not(.active) {
-                border-bottom: 2px solid #B3B3BA;
+                border-bottom: 2px solid $color-grey;
             }
         }
     }
     &__content {
-        color: white;
+        color: $color-white;
         display: none;
         padding-top: 28px;
         position: relative;
