@@ -4105,7 +4105,7 @@ $('.autoplay').slick({
     }
   }]
 });
-$('.autoplay--story').slick({
+$('.story__autoplay').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
