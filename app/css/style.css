@@ -253,6 +253,9 @@ ul {
   .bg {
     background-size: 705px 770px, auto;
   }
+  .title-gradient--team {
+    padding: 15px 120px 0;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -532,14 +535,14 @@ ul {
     font-size: 16px;
     line-height: 20px;
   }
-  .header__menu-item:hover {
+  .header__menu-item:hover:not(.active) {
     border-bottom: 2px solid #FFFFFF;
   }
   .header__menu-item.active {
     color: #F0145A;
     border-bottom: 2px solid #F0145A;
   }
-  .header__menu-item--blue:hover {
+  .header__menu-item--blue:hover:not(.active) {
     border-bottom: 2px solid #24A3FF;
   }
   .header__fb path {
@@ -1134,10 +1137,20 @@ ul {
   background: #E6E6F0;
   margin: 0 30px 33px;
 }
+.footer--notline {
+  padding-top: 0;
+  margin-top: 60px;
+}
+.footer--notline::before {
+  display: none;
+}
 .footer__wrapper {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
+}
+.footer__wrapper--notline {
+  padding-top: 30px;
 }
 .footer__adress-info {
   font-size: 16px;
@@ -1496,6 +1509,78 @@ ul {
   }
   .achievements__slider-img {
     margin: 23px auto;
+  }
+}
+.team-main {
+  padding-top: 10px;
+}
+.team-main__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 29px;
+  margin-top: 30px;
+  text-align: center;
+}
+.team-main__text {
+  position: relative;
+  text-align: start;
+}
+.team-main__text-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
+.team-main__text-position {
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B3BA;
+}
+.team-main__text-link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-color: #F5F5FA;
+  border-radius: 100%;
+  text-align: center;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.team-main__text-link svg {
+  margin-top: 10px;
+}
+.team-main__text-link:hover {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+@media (min-width: 768px) {
+  .team-main__wrapper {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 60px;
+    gap: 59px;
+  }
+}
+@media (min-width: 992px) {
+  .team-main__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .team-main__article-foto img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  .team-main__text-position {
+    padding-right: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
