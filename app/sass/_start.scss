@@ -35,6 +35,10 @@ button {
         font-size: 36px;
         padding-top: 0;
     }
+    &--fz38 {
+        font-size: 38px;
+        padding-top: 30px;
+    }
 }
 .link-blue {
     font-weight: 700;
@@ -131,6 +135,9 @@ ul {
     .title-gradient {
         &--team {
             padding: 15px 120px 0;
+        }
+        &--fz38 {
+            padding-top: 3px;
         }
     }
     

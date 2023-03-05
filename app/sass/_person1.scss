@@ -1,0 +1,117 @@
+.person {
+    padding-top: 20px;
+    &__foto {
+        display: block;
+        text-align: center;
+        & img {
+            border-radius: 12px;
+        }
+    }
+    &__contact {
+        padding-top: 6px;
+        display: flex;
+        flex-direction: column;
+        &-position {
+            font-size: 14px;
+            line-height: 22px;
+            color: $color-grey;
+            padding-top: 15px;
+        }
+        &-link {
+            padding-top: 10px;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-blue;
+        }
+    }
+    &__about {
+        &::before {
+            margin: 30px 0;
+            content: '';
+            display: block;
+            height: 4px;
+            background: #E6E6F0;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 26px;
+            &:not(:last-of-type) {
+                padding-bottom: 20px;
+            }
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #323264;
+            padding-top: 10px;padding-bottom: 15px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .person {
+        padding-top: 22px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-template-rows: min-content min-content;
+        &__foto {
+            & img {
+                object-fit: cover;
+                max-width: 300px;
+                display: block;
+                height: 375px;
+            }
+        }
+        &__info {
+            padding-top: 87px;
+            padding-left: 30px;
+        }
+        &__contact {
+            padding-top: 0;
+        }
+        &__about {
+            grid-column: 1/-1;
+        }
+    }
+}
+@media(min-width: 992px) {
+    .person {
+        &__info {
+            padding-top: 0;
+            padding-left: 60px;
+        }
+        &__foto {
+            grid-row: 1/-1;
+        }
+        &__about {
+            grid-column: 2/-1;
+            padding-left: 60px;
+        }
+    }
+}
+@media(min-width: 1200px) {
+    .person {
+        padding-top: 24px;
+        &__foto {
+            padding-left: 120px;
+            & img {
+                height: auto;
+                min-width: min-content;
+            }
+        }
+        &__contact {
+            flex-direction: row;
+            &-link {
+                padding-top: 15px;
+                padding-left: 27px;
+            }
+        }
+        &__about {
+            padding-right: 119px;
+        }
+    }
+}
+    

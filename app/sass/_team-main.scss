@@ -40,6 +40,9 @@
             }
             &:hover {
                 transform: rotate(-180deg);
+                & path {
+                    stroke: $color-pink;
+                }
             }
         }
     }
