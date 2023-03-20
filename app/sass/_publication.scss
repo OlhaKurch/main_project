@@ -25,6 +25,9 @@
             font-size: 16px;
             line-height: 20px;
             color: $color-blue;
+            &:hover {
+                color: $color-pink;
+            }
         }
         &-data {
             padding-top: 15px;

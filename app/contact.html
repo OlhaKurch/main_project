@@ -51,44 +51,55 @@
             <svg class="header__logo-line" width="12" height="26" viewBox="0 0 12 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.72827 0H11.9505L3.55574 26H0.333496L8.72827 0Z" fill="#F0145A"/>
             </svg>
-            <p class="header__name">team</p>
+            <p class="header__name">contact</p>
         </div>
         <div class="header__menu header__menu--white">
             <button class="header__menu-link header__menu-link--dark" href="#"></button>
             <ul class="header__menu-list header__menu-list--white">
                 <li><a href="about.html" class="header__menu-item header__menu-item--blue">about us</a></li>
                 <li><a href="#" class="header__menu-item header__menu-item--blue">services</a></li>
-                <li><a href="team.html" class="header__menu-item header__menu-item--blue  active">team</a></li>
+                <li><a href="team.html" class="header__menu-item header__menu-item--blue">team</a></li>
                 <li><a href="publication.html" class="header__menu-item header__menu-item--blue">publications</a></li>
-                <li><a href="contact.html" class="header__menu-item header__menu-item--blue">contact</a></li>
+                <li><a href="#" class="header__menu-item header__menu-item--blue active">contact</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <section class="person container">
-            <picture class="person__foto">
-                <source media="(min-width:1200px)" srcset="img/person_deskt.jpg"> 
-                <img src="img/person.jpg" alt="person_foto">
-            </picture>
-            <div class="person__info">
-                <h1 class="title-gradient title-gradient--fz38">Oksana Kobzar</h1>
-                <div class="person__contact">
-                    <p class="person__contact-position">Equity partner, Attorney-at-law</p>
-                    <a href="mailto:kobzar@forstudy.space" class="person__contact-link">kobzar@forstudy.space</a>
-                    <a href="#" class="person__contact-link">LinkedIn profile</a>
+        <section class="contacts__wrapper container">
+            <div class="contacts__info">
+                <div class="contacts__adress">
+                    <p class="contacts__adress-text">Kyiv, </p>
+                    <p class="contacts__adress-text">Mechnikova str, 14</p>
+                </div>
+                <div class="contacts__about">
+                    <a href="tel: 0800211927" class="contacts__about-text">0800 211 927</a>
+                    <a class="contacts__about-mail" href="mailto: contact@forstudy.space">contact@forstudy.space</a>
+                </div>
+                <div class="contacts__fb">
+                    <a href="#">
+                        <svg width="38" height="38" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="#24A3FF"/>
+                        </svg>
+                    </a>
+                    <div class="contacts__fb-text">
+                        <p>Our page </p>
+                        <p>on facebook</p>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="person__about">
-                <p class="person__about-text">Oksana heads the practice of international trade and shipping. He specializes in resolving disputes related to the purchase and sale of raw materials and transportation of goods by sea.</p>
-                <p class="person__about-text">Desis represents the interests of shipowners, freight forwarders, cargo owners, shipping agents, container lines, as well as international banks and P&I clubs.</p>
-                <h2 class="person__about-title">Education</h2>
-                <p class="person__about-text">National University "Odessa Law Academy", Master of Law.</p>
-                <h2 class="person__about-title">Experience</h2>
-                <p class="person__about-text">Her professional experience includes resolving disputes under English law and representing interests in foreign commercial arbitrations such as GAFTA, FOSFA and LMAA. Danilo also represents the interests of clients in the state courts of Ukraine on similar disputes, as well as in the ICAC and IAC at the CCI of Ukraine</p>
+            <div class="contacts__form">
+                <h1 class="title-gradient title-gradient--fz30">We would like to help you</h1>
+                <input class="contacts__form-input" type="text" placeholder="Name">
+                <textarea class="contacts__form-input contacts__form-input--h130" name="text" placeholder="Message"></textarea>
+                <p class="contacts__form-question">How to answer you?</p>
+                <input class="contacts__form-input" type="tel" placeholder="Phone number">
+                <input class="contacts__form-input" type="email" placeholder="Email">
+                <button class="contacts__form-btn" type="submit">Send message</button>
             </div>
         </section>
     </main>
-    <footer class="footer footer--notline footer--mt30">
+    <footer class="footer footer--notline">
         <div class="footer__wrapper footer__wrapper--notline container">
             <div class="footer__adress">
                 <p class="footer__adress-info">Kyiv, Mechnikova str., 14/1</p>

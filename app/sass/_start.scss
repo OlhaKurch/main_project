@@ -39,6 +39,9 @@ button {
         font-size: 38px;
         padding-top: 30px;
     }
+    &--fz30 {
+        font-size: 30px;
+    }
 }
 .link-blue {
     font-weight: 700;
@@ -48,12 +51,16 @@ button {
     letter-spacing: 1px;
     color: $color-blue;
     display: inline-flex;
+    border-bottom: 1px solid transparent;
     &::after {
         content: '';
         background-image: url(../img/arr.svg);
         width: 8px;
         height: 11px;
         margin: auto 5px;
+    }
+    &:hover {
+        border-bottom: 1px solid $color-blue;
     }
 }
 .container {
@@ -123,6 +130,9 @@ ul {
         &--fz36 {
             line-height: 32px;
         }
+        &--fz30 {
+            font-size: 30px;
+        }
     }
 }
 @media(min-width: 992px) {
@@ -138,6 +148,9 @@ ul {
         }
         &--fz38 {
             padding-top: 3px;
+        }
+        &--fz30 {
+            line-height: 37px;
         }
     }
     

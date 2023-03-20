@@ -159,6 +159,9 @@ button {
   font-size: 38px;
   padding-top: 30px;
 }
+.title-gradient--fz30 {
+  font-size: 30px;
+}
 
 .link-blue {
   font-weight: 700;
@@ -170,6 +173,7 @@ button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  border-bottom: 1px solid transparent;
 }
 .link-blue::after {
   content: "";
@@ -177,6 +181,9 @@ button {
   width: 8px;
   height: 11px;
   margin: auto 5px;
+}
+.link-blue:hover {
+  border-bottom: 1px solid #24A3FF;
 }
 
 .container {
@@ -249,6 +256,9 @@ ul {
   .title-gradient--fz36 {
     line-height: 32px;
   }
+  .title-gradient--fz30 {
+    font-size: 30px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -262,6 +272,9 @@ ul {
   }
   .title-gradient--fz38 {
     padding-top: 3px;
+  }
+  .title-gradient--fz30 {
+    line-height: 37px;
   }
 }
 @media (min-width: 1200px) {
@@ -1086,6 +1099,9 @@ ul {
   line-height: 20px;
   color: #24A3FF;
 }
+.publication__about-title:hover {
+  color: #F0145A;
+}
 .publication__about-data {
   padding-top: 15px;
   font-weight: 700;
@@ -1796,6 +1812,9 @@ ul {
   line-height: 20px;
   color: #24A3FF;
 }
+.publ__about-title:hover {
+  color: #F0145A;
+}
 .publ__about-data {
   padding-top: 15px;
   font-weight: 700;
@@ -1841,6 +1860,149 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: -webkit-min-content;
     grid-template-rows: min-content;
+  }
+}
+.contacts__wrapper {
+  padding-top: 22px;
+  padding-bottom: 30px;
+  display: grid;
+  gap: 30px;
+  margin-bottom: -60px;
+}
+.contacts__adress-text {
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264;
+}
+.contacts__adress::after {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  content: "";
+  height: 4px;
+  background: #E6E6F0;
+  display: block;
+}
+.contacts__about a {
+  display: block;
+}
+.contacts__about-text {
+  color: #46466E;
+  padding-bottom: 15px;
+  font-size: 21px;
+  line-height: 30px;
+}
+.contacts__about-mail {
+  color: #24A3FF;
+  font-size: 21px;
+  line-height: 30px;
+}
+.contacts__about::after {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  content: "";
+  height: 4px;
+  background: #E6E6F0;
+  display: block;
+}
+.contacts__fb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__fb-text {
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24A3FF;
+}
+.contacts__form {
+  background-color: #F5F5FA;
+  padding: 15px 30px 30px;
+  border-radius: 12px;
+}
+.contacts__form h1 {
+  margin-bottom: 15px;
+}
+.contacts__form-input {
+  padding: 15px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B3B3BA;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.contacts__form-input--h130 {
+  height: 130px;
+}
+.contacts__form-btn {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 18px 30px;
+  width: 100%;
+  height: 56px;
+  background: #24A3FF;
+  -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+          box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-top: 28px;
+}
+.contacts__form-question {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  margin-top: 23px;
+}
+
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    gap: 58px;
+  }
+  .contacts__form h1 {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .contacts__wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 60px;
+  }
+  .contacts__form {
+    margin-top: 5px;
+  }
+  .contacts__form h1 {
+    margin-bottom: 15px;
+  }
+  .contacts__info {
+    padding-top: 2px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__form {
+    margin-right: 120px;
+  }
+  .contacts__info {
+    margin-left: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
