@@ -1895,6 +1895,11 @@ ul {
   color: #24A3FF;
   font-size: 21px;
   line-height: 30px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.contacts__about-mail:hover {
+  color: #F0145A;
 }
 .contacts__about::after {
   margin-top: 30px;
@@ -1911,6 +1916,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.contacts__fb:hover path {
+  fill: #F0145A;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 .contacts__fb-text {
   padding-left: 10px;
@@ -1942,9 +1952,18 @@ ul {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 .contacts__form-input--h130 {
   height: 130px;
+}
+.contacts__form-input:hover {
+  border: 1px solid #24A3FF;
+}
+.contacts__form-input:focus {
+  border: 1px solid red;
+  outline: none;
 }
 .contacts__form-btn {
   -webkit-box-align: start;
@@ -1953,7 +1972,7 @@ ul {
   padding: 18px 30px;
   width: 100%;
   height: 56px;
-  background: #24A3FF;
+  background-color: #24A3FF;
   -webkit-box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
           box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
   border-radius: 12px;
@@ -1963,6 +1982,14 @@ ul {
   line-height: 20px;
   color: #FFFFFF;
   margin-top: 28px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.contacts__form-btn:hover {
+  background-color: #0085FF;
+}
+.contacts__form-btn:active {
+  background-color: #006CCF;
 }
 .contacts__form-question {
   font-weight: 700;
