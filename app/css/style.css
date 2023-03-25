@@ -294,7 +294,7 @@ ul {
   color: #FFFFFF;
   padding: 0 15px;
 }
-.header__adress, .header__fb, .header__menu-list {
+.header__adress, .header__fb {
   display: none;
 }
 .header__top {
@@ -401,6 +401,8 @@ ul {
   width: 32px;
   height: 32px;
   cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 .header__menu-link:active {
   background-color: #F5F5FA;
@@ -426,16 +428,20 @@ ul {
     position: relative;
   }
   .header__menu-list {
-    display: none;
     position: absolute;
-    width: 90%;
-    right: -15px;
+    width: 80%;
+    right: 0;
     background-color: #FFFFFF;
     top: auto;
     padding: 12px;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
   }
   .header__menu-list li:not(:last-child) {
     margin-bottom: 15px;
+  }
+  .header__menu-list.active {
+    display: none;
   }
   .header__menu-item {
     background-color: #F5F5FA;

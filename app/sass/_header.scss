@@ -5,8 +5,7 @@
     color: $color-white;
     padding: 0 15px;
     &__adress,
-    &__fb,
-    &__menu-list {
+    &__fb {
         display: none;
     }
     &__top {
@@ -101,6 +100,7 @@
             width: 32px;
             height: 32px;
             cursor: pointer;
+            transition-duration: 0.3s;
             &:active {
                 background-color:#F5F5FA;
             }
@@ -127,15 +127,18 @@
         position: relative;
         &__menu {
             &-list {
-                display: none;
                 position: absolute;
-                width: 90%;
-                right: -15px;
+                width: 80%;
+                right: 0;
                 background-color: $color-white;
                 top: auto;
                 padding: 12px;
+                transition-duration: 0.3s;
                 & li:not(:last-child) {
                     margin-bottom: 15px;
+                }
+                &.active {
+                     display: none;
                 }
             }
             &-item {

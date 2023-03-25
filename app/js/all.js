@@ -4114,13 +4114,23 @@ $('.story__autoplay').slick({
   arrows: false,
   dotsClass: 'achievements__slider-dots',
   mobileFirst: true
-  // responsive: [
-  //   {
-  //     breakpoint: 767,
-  //     settings:{
-  //         slidesToShow: 1,
-  //         slidesToScroll: 4,
-  //       }
-  //   },
-  // ]
+});
+
+// $(function() {
+//   $('.header__menu-link').on('click', function () {
+//     $('.header__menu-list').removeClass('.header__menu-list--close');
+//   });
+// });
+
+var menuBtn = document.querySelector('.header__menu-link');
+var menu = document.querySelector('.header__menu-list');
+menuBtn.addEventListener('click', function () {
+  menu.classList.toggle('active');
+  menuBtn.classList.toggle('active');
+});
+var menuBtnWt = document.querySelector('.header__menu-link--dark');
+var menuWt = document.querySelector('.header__menu-list--white');
+menuBtn.addEventListener('click', function () {
+  menu.classList.toggle('active');
+  menuBtn.classList.toggle('active');
 });
